@@ -16,7 +16,7 @@
 
 ## Sprints 
 <ul>
-  <li>Sprint [Semana 1]: <a href="PB-Compass-UOL/Sprint1">sprint/semana1</a>
+  <li>Sprint [Semana 1]: <a href="Sprint1/README.md">sprint/semana1</a>
 </li>
 </ul>
 
