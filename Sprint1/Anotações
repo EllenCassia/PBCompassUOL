@@ -1,3 +1,6 @@
+O que é gitignore?
+Evita que certos tipos de arquivos, dados sensíveis ou arquivos gerados automaticamente sejam adicionados ao repositório Git
+
 //Visualiza as origins
 git remote -v
 
@@ -40,7 +43,26 @@ git fetch -a
 //Adicionar submodulos
 git submodulo link do diretório remoto
 
-//Ver as diferenças de commites das branchs
+//Ver as diferenças de commits das branchs
 git diff
 
-//fds
+//Mostra todos os commit feito no projeto
+git shortlog
+
+//Remove os arquivos que não usaram o comando add
+git clean ou -f pra forçar a ação
+
+//Verificar se está tudo certo no diretório
+git fsck
+
+//Verifica as mudanças no diretório
+git reflog
+
+//Reorganizar ou rebasear a história de commits de uma branch
+git rebase branch_destino - Rebasing em relação a uma branch
+git rebase -i commit_referencia - Interativamente reorganizando commits
+
+pick - levar todos os commits
+squash - unir a mensagem ao último commit
+reword - modificar a mensagem
+:x! - arquivo seja salvo
