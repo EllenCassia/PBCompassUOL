@@ -1,0 +1,44 @@
+//Visualiza as origins
+git remote -v
+
+//Remove todas as origens
+git remote rm origin
+
+//Mover ou renomear um arquivo diretamente do git
+git mv pastaRemetente pastaDestinatária
+
+//Apagar branch
+git branch -d <nome>
+
+//Mudar de branch
+git checkout <nome>
+
+//Criar e mudar de branch
+git checkout -b <nome>
+
+//Salvar alterações do código em area oculta, e reverter o diretório ao estado do último commit
+git slash
+
+//Lista todos os stashes disponíveis
+git stash list
+
+//Aplica as alterações de um stash específico ao diretório de trabalho atual
+git stash apply n, onde n é o número do stash
+
+//Visualiza alterações nos testes stash
+git stash show -p n
+
+//Apagar uma stash
+git stash drop n
+
+//Apagar todos os stash
+git stash clear
+
+//Puxar todos os branchs remotos
+git fetch -a
+
+//Adicionar submodulos
+git submodulo link do diretório remoto
+
+//Ver as diferenças de commites das branchs
+git diff
