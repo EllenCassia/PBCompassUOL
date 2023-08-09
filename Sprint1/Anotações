@@ -4,8 +4,14 @@ Evita que certos tipos de arquivos, dados sensíveis ou arquivos gerados automat
 //Visualiza as origins
 git remote -v
 
+//Remover a origem existente
+git remote rm origin
+
 //Remove todas as origens
 git remote rm origin
+
+//Adicionar um origem
+git remote add <nome> <URL>
 
 //Mover ou renomear um arquivo diretamente do git
 git mv pastaRemetente pastaDestinatária
