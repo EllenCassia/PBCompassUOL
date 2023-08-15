@@ -1,0 +1,16 @@
+// Criar um diretório no linux
+mkdir <nome>
+
+// Criar um arquivo
+touch <nome>
+
+//Listar todas os diretórios
+ls
+
+//Remover um arquivo no diretório
+rm -i <nome>
+
+//Remover diretório
+rm -dv <nome>
+
+
