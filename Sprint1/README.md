@@ -12,7 +12,7 @@
 ![Certificado de Conclusão do Curso de Linux](https://udemy-certificate.s3.amazonaws.com/image/UC-e986f56f-4b3d-4063-bd2d-72fa60e432a4.jpg)
 
 - **Evento:** Linux para Desenvolvedores (c/ terminal, Shell, Apache e +)
-- **Data:** 9 de Agosto de 2023
+- **Data:** 16 de Agosto de 2023
 
 - **Descrição:** No evento "Linux para Desenvolvedores", mergulhei no mundo do sistema operacional Linux e suas aplicações no desenvolvimento de software. Aprofundei-me no uso do terminal e do shell, ganhando confiança na execução de tarefas de administração e automação. Além disso, explorei o servidor web Apache e outras ferramentas essenciais do ambiente de desenvolvimento Linux.
 
