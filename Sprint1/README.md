@@ -9,7 +9,7 @@
 - **Descrição:** Neste curso abrangente de Git e GitHub, explorei desde os conceitos básicos até técnicas avançadas de controle de versão. Aprendi a utilizar o Git para gerenciar projetos, colaborar com equipes e rastrear alterações de código de forma eficiente. Além disso, também explorei a criação de gists e a hospedagem de páginas no GitHub, expandindo minhas habilidades além do controle de versão.
 
 ## Certificado de Conclusão do Curso de Linux
-![Certificado de Conclusão do Curso de Linux](link_para_a_imagem_do_certificado_da_jornada)
+![Certificado de Conclusão do Curso de Linux](https://udemy-certificate.s3.amazonaws.com/image/UC-e986f56f-4b3d-4063-bd2d-72fa60e432a4.jpg)
 
 - **Evento:** Linux para Desenvolvedores (c/ terminal, Shell, Apache e +)
 - **Data:** 9 de Agosto de 2023
