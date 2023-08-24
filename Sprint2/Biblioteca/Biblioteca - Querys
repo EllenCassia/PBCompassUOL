@@ -1,0 +1,14 @@
+[Exercicio 1] :
+Apresente a query para listar todos os livros publicados após 2014. Ordenar pela coluna cod, em ordem crescente, as linhas.
+Atenção às colunas esperadas no resultado final: cod, titulo, autor, editora, valor, publicacao, edicao, idioma
+
+RESOLUÇÃO ->
+
+SELECT cod, titulo, autor, editora, valor, publicacao, edicao, idioma FROM LIVRO WHERE publicacao > '2014-12-31' ORDER BY cod ASC
+
+[Exercicio 2] :
+Apresente a query para listar os 10 livros mais caros. Ordenar as linhas pela coluna valor, em ordem decrescente.
+Atenção às colunas esperadas no resultado final:  titulo, valor.
+
+RESOLUÇÃO ->
+
