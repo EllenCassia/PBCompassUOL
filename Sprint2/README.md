@@ -7,9 +7,9 @@ intensamente o universo do SQL. Mas, além disso, também conseguimos mergulhar 
 principalmente quando estamos lidando com o desafio do Big Data. Essa experiência foi uma combinação fascinante de aprimoramento técnico e 
 uma visão mais ampla das complexidades que surgem ao lidar com grandes volumes de dados.
 
-##SQL para Análise de Dados: Do básico ao avançado
+## SQL para Análise de Dados: Do básico ao avançado
 
-###Conteúdo do Curso
+### Conteúdo do Curso
 
 Clique aqui : [Desafios dos finais de capítulos](SQLBasicoAoAvançado/Querys) 
 
