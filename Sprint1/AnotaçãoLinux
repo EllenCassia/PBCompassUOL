@@ -10,7 +10,36 @@ ls
 //Remover um arquivo no diretório
 rm -i <nome>
 
-//Remover diretório
+//Remove apenas diretórios do sistema
+rmdir
+
+//Remover diretório vazios
 rm -dv <nome>
 
+//Copiar um diretório ou arquivo
+cp "/* - copiar tudo dentro do diretório" ou <nome> "<nome>*"
+
+//Comando que instala, atualiza, remove e gerenciar pacotes de software em seus sistemas
+apt-get
+
+//Permitir que usuários comuns executem comandos com privilégios, o famoso PowerShell de administrador (dono)
+sudo
+
+//Atualizar todos os repositórios dos pacotes instalados
+sudo apt-get update
+
+//Remover um pacote de software instalado
+sudo apt-get purge nome_do_pacote
+
+//Instalar um pacote
+sudo apt-get install <nome do aplicativo>
+
+//Força a atualização dos pacotes - CUIDADO "atualização invasiva" - correr o risco de desinstalar alguns pacotes
+sudo apt-get dist-upgrade
+
+//Buscar um pacote aplicativos especifico
+apt-cache search <nome do pacote>
+
+//Ver todos os diretórios vazios
+find -empty
 
