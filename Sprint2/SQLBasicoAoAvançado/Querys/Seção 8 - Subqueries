@@ -2,3 +2,13 @@
 
 -- (Exercício 1) Crie uma coluna calculada com o número de visitas realizadas por cada
 -- cliente da tabela sales.customers
+
+SELECT
+    c.*,
+    COALESCE(v.visit_count, 0) as numero_visitas
+FROM sales.customers c
+LEFT JOIN (
+    SELECT customer_id, COUNT(*) as visit_count
+    FROM sales.funnel
+    GROUP BY customer_id
+) v ON c.customer_id = v.customer_id;
