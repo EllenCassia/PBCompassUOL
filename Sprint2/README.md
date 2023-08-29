@@ -40,3 +40,14 @@ Link das querys : [ExerciciosLoja - conceitos I](SQL%20-%20desafios/Loja)
 
 ## **Sprint 2** do PB da Compass com ênfase em AWS - Conceitos II
 
+###Tarefa 1: Exportação de dados
+
+Segue: [Querys dos arquivos csv](SQL%20-%20desafios/Biblioteca/Seçao%206%20-%20Linguagem%20SQL%20-%20Exercicios%20II/Tarefa%201%20-%20Exportação%20de%20dados)
+
+Segue link do arquivo no formato .csv (referente a query dos 10 livros mais caros):
+
+Clique aqui : [Arquivo1](SQL%20-%20desafios/Biblioteca/Seçao%206%20-%20Linguagem%20SQL%20-%20Exercicios%20II/arquivo1.csv)
+
+Segue link do arquivo no formato .csv (referente a query das 5 editoras com maior quantidade de livros na biblioteca) 
+
+Clique aqui : [Arquivo2](SQL%20-%20desafios/Biblioteca/Seçao%206%20-%20Linguagem%20SQL%20-%20Exercicios%20II/arquivo2.csv)
