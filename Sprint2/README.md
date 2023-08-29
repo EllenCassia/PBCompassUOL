@@ -36,3 +36,4 @@ Link das querys : [ExerciciosLoja - conceitos I](SQL%20-%20desafios/Loja)
 <img src="https://img-c.udemycdn.com/redactor/raw/article_lecture/2022-11-08_14-19-44-86b3599525bdcd935f634fe9ddc10c21.png" alt="DER - Loja" width="700" height="500">
 
 ## **Sprint 2** do PB da Compass com ênfase em AWS - Conceitos II
+
