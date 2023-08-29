@@ -13,6 +13,7 @@ uma visão mais ampla das complexidades que surgem ao lidar com grandes volumes 
 
 Clique aqui : [Desafios dos finais de capítulos](SQLBasicoAoAvançado/Querys) 
 
+#### Certificado do Curso 
 
 ## **Sprint 2** do PB da Compass com ênfase em AWS - Conceitos I
 
