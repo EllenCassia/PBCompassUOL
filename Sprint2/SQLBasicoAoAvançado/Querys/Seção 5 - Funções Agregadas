@@ -2,7 +2,7 @@
 
 -- (Exercício 1) Conte quantos clientes da tabela sales.customers tem menos de 30 anos
 
-SELECT COUNT(*) FROM sales.customers WHERE EXTRACT(YEAR FROM AGE(NOW(), birth_date)) < 30;
+SELECT COUNT(*) AS quantidade_clientes_menos_de_30 FROM sales.customers WHERE DATE_DIFF(CURRENT_DATE, date_of_birth, YEAR) < 30;
 
 -- (Exercício 2) Informe a idade do cliente mais velho e mais novo da tabela sales.customers
 
