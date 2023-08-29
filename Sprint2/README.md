@@ -15,6 +15,9 @@ Clique aqui : [Desafios dos finais de capítulos](SQLBasicoAoAvançado/Querys)
 
 #### Certificado do Curso 
 
+<img src="https://udemy-certificate.s3.amazonaws.com/image/UC-bf292383-b95a-494b-96a2-322227f821bf.jpg" alt="DER - Loja" width="600" height="400">
+
+
 ## **Sprint 2** do PB da Compass com ênfase em AWS - Conceitos I
 
 Praticar conceitos de SQL que estudou no decorrer da Sprint.
