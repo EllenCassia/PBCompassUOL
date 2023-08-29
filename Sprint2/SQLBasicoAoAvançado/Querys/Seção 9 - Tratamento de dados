@@ -20,14 +20,6 @@ GROUP BY faixa_renda;
 -- preencha com os dados da coluna population, mas caso esse campo estiver nulo,
 -- preencha com a população média (geral) das cidades do Brasil
 
-Não conseguir
-
--- RESUMO ##########################################################################
--- (1) CASE WHEN é o comando utilizado para criar respostas específicas para
--- diferentes condições e é muito utilizado para fazer agrupamento de dados
--- (2) COALESCE é o comando utilizado para preencher campos nulos com o primeiro
--- valor não nulo de uma sequência de valores.
-
 SELECT
     *,
     COALESCE(population, (SELECT AVG(population) FROM temp_tables.regions)) as populacao_ajustada
