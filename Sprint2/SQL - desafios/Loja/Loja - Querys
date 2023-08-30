@@ -1,0 +1,161 @@
+[Exercício 8] :
+
+RESOLUÇÃO ->
+[Exercício 9] :
+Listar o código e nome do produto mais vendido entre as datas de 2014-02-03 até 2018-02-02
+
+RESOLUÇÃO ->
+
+SELECT
+    tbvendas.cdpro,
+    MAX(tbvendas.nmpro) AS nmpro
+FROM
+    tbvendas 
+WHERE
+    tbvendas.status = 'Concluído'
+    AND tbvendas.dtven BETWEEN '2014-02-03 00:00:00' AND '2018-02-02 00:00:00'
+GROUP BY
+    tbvendas.cdpro
+ORDER BY
+    COUNT(tbvendas.cdven) DESC
+LIMIT 1;
+
+[Exercício 10] :
+Calcule a comissão de todos os vendedores, considerando todas as vendas armazenadas na base de dados com status concluído.
+
+RESOLUÇÃO ->
+
+SELECT
+    vendedor.nmvdd AS vendedor,
+    SUM(vendas.qtd * vendas.vrunt) AS valor_total_vendas,
+    ROUND(SUM(vendas.qtd * vendas.vrunt) * vendedor.perccomissao / 100, 2) AS comissao
+FROM
+    tbvendedor vendedor
+JOIN
+    tbvendas vendas ON vendedor.cdvdd = vendas.cdvdd
+WHERE
+    vendas.status = 'Concluído'
+GROUP BY
+    vendedor.cdvdd, vendedor.nmvdd, vendedor.perccomissao
+ORDER BY
+    comissao DESC;
+
+[Exercício 11] :
+Listar o código e nome cliente com maior gasto na loja
+
+RESOLUÇÃO ->
+
+SELECT
+    vendas.cdcli,
+    vendas.nmcli,
+    SUM(vendas.qtd * vendas.vrunt) AS gasto
+FROM
+    tbvendas vendas
+WHERE
+    vendas.status = 'Concluído'
+GROUP BY
+    vendas.cdcli, vendas.nmcli
+ORDER BY
+    gasto DESC
+LIMIT 1;
+
+[Exercício 12] :
+Listar código, nome e data de nascimento dos dependentes do vendedor com menor valor total bruto em vendas (não sendo zero).
+
+RESOLUÇÃO ->
+
+SELECT
+    dependente.cddep,
+    dependente.nmdep,
+    dependente.dtnasc,
+    vendedor_vendas.valor_total_vendas
+FROM
+    tbdependente dependente
+JOIN (
+    SELECT
+        vendedor.cdvdd,
+        SUM(vendas.qtd * vendas.vrunt) AS valor_total_vendas
+    FROM
+        tbvendedor vendedor
+    JOIN
+        tbvendas vendas ON vendedor.cdvdd = vendas.cdvdd
+    WHERE
+        vendas.status = 'Concluído'
+    GROUP BY
+        vendedor.cdvdd
+    HAVING
+        valor_total_vendas > 0
+    ORDER BY
+        valor_total_vendas ASC
+    LIMIT 1
+) vendedor_vendas ON dependente.cdvdd = vendedor_vendas.cdvdd;
+
+[Exercício 13] :
+Listar os 10 produtos menos vendidos pelos canais de E-Commerce ou Matriz
+
+RESOLUÇÃO ->
+
+SELECT
+    vendas.cdpro,
+    vendas.nmcanalvendas,
+    vendas.nmpro,
+    SUM(vendas.qtd) AS quantidade_vendas
+FROM
+    tbvendas vendas
+WHERE
+    vendas.nmcanalvendas IN ('Ecommerce', 'Matriz')
+    AND vendas.status = 'Concluído'
+GROUP BY
+    vendas.cdpro, vendas.nmcanalvendas, vendas.nmpro
+ORDER BY
+    quantidade_vendas ASC
+LIMIT 10;
+
+[Exercício 14] :
+Listar o gasto médio por estado da federação.
+
+RESOLUÇÃO ->
+
+SELECT
+    vendas.estado,
+    ROUND(AVG(vendas.qtd * vendas.vrunt), 2) AS gastomedio
+FROM
+    tbvendas vendas
+WHERE
+    vendas.status = 'Concluído'
+GROUP BY
+    vendas.estado
+ORDER BY
+    gastomedio DESC;
+
+[Exercício 15] :
+Listar os códigos das vendas identificadas como deletadas.
+
+RESOLUÇÃO ->
+
+SELECT
+    cdven
+FROM
+    tbvendas
+WHERE
+    deletado = 1
+ORDER BY
+    cdven ASC;
+
+[Exercício 16] :
+Listar a quantidade média vendida de cada produto agrupado por estado da federação.
+
+RESOLUÇÃO ->
+
+SELECT
+    vendas.estado,
+    vendas.nmpro,
+    ROUND(AVG(vendas.qtd), 4) AS quantidade_media
+FROM
+    tbvendas vendas
+WHERE
+    vendas.status = 'Concluído'
+GROUP BY
+    vendas.estado, vendas.nmpro
+ORDER BY
+    vendas.estado ASC, vendas.nmpro ASC;
