@@ -1,6 +1,23 @@
 [Exercício 8] :
+Listar o código e o nome do vendedor com maior número de vendas (contagem)
 
 RESOLUÇÃO ->
+
+SELECT
+    vendedor.cdvdd,
+    vendedor.nmvdd
+FROM
+    tbvendedor vendedor
+JOIN
+    tbvendas vendas ON vendedor.cdvdd = vendas.cdvdd
+WHERE
+    vendas.status = 'Concluído'
+GROUP BY
+    vendedor.cdvdd, vendedor.nmvdd
+ORDER BY
+    COUNT(vendas.cdven) DESC
+LIMIT 1;
+
 [Exercício 9] :
 Listar o código e nome do produto mais vendido entre as datas de 2014-02-03 até 2018-02-02
 
