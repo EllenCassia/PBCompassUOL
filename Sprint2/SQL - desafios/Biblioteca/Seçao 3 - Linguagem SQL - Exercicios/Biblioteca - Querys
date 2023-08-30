@@ -37,7 +37,82 @@ ORDER BY
 LIMIT 5;
 
 [Exercícios 4] : 
-
-
+Listar a quantidade de livros publicada por cada autor.
 
 RESOLUÇÃO ->
+
+SELECT
+	autor.nome AS nome,
+    autor.codautor AS codautor,
+    autor.nascimento,
+    COUNT(livro.cod) AS quantidade
+FROM
+    autor
+LEFT JOIN
+    livro ON autor.codautor = livro.autor
+GROUP BY
+    autor.codautor, autor.nome, autor.nascimento
+ORDER BY
+    autor.nome ASC;
+
+[Exercícios 5] : 
+Listar o nome dos autores que publicaram livros através de editoras NÃO situadas na região sul do Brasil.
+
+RESOLUÇÃO ->
+
+SELECT DISTINCT
+    autor.nome AS nome
+FROM
+    autor
+JOIN
+    livro ON autor.codautor = livro.autor
+JOIN
+    editora ON livro.editora = editora.codeditora
+JOIN
+    endereco ON editora.endereco = endereco.codendereco
+WHERE
+    endereco.estado NOT IN ('RS', 'SC', 'PR')
+ORDER BY
+    autor.nome ASC;
+
+[Exercícios 6] : 
+Listar o autor com maior número de livros publicados.
+
+RESOLUÇÃO ->
+
+SELECT
+    autor.codautor,
+    autor.nome,
+    COUNT(livro.cod) AS quantidade_publicacoes
+FROM
+    autor
+JOIN
+    livro ON autor.codautor = livro.autor
+GROUP BY
+    autor.codautor, autor.nome
+ORDER BY
+    quantidade_publicacoes DESC
+LIMIT 1;
+
+[Exercícios 7] : 
+Listar o nome dos autores com nenhuma publicação.
+
+RESOLUÇÃO ->
+
+SELECT
+    autor.nome AS autor
+FROM
+    autor
+LEFT JOIN
+    livro ON autor.codautor = livro.autor
+WHERE
+    livro.cod IS NULL
+ORDER BY
+    autor.nome ASC;
+
+
+
+
+
+
+
