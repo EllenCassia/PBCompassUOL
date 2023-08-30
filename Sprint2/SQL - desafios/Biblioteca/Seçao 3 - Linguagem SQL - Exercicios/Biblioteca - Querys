@@ -12,4 +12,28 @@ Atenção às colunas esperadas no resultado final:  titulo, valor.
 
 RESOLUÇÃO ->
 
-[]
+select titulo, valor from livro order by valor desc limit 10
+
+[Exercício 3] :
+ Listar as 5 editoras com mais livros na biblioteca. 
+
+RESOLUÇÃO ->
+
+SELECT
+    editora.codeditora AS CodEditora,
+    editora.nome AS NomeEditora,
+    COUNT(livro.cod) AS QuantidadeLivros
+FROM
+    livro
+JOIN
+    editora ON livro.editora = editora.codeditora
+GROUP BY
+    editora.codeditora, editora.nome
+ORDER BY
+    QuantidadeLivros DESC
+LIMIT 5;
+
+[Exercícios 4] : 
+
+
+RESOLUÇÃO ->
