@@ -40,7 +40,7 @@ Link das querys : [ExerciciosLoja - conceitos I](SQL%20-%20desafios/Loja)
 
 ## **Sprint 2** do PB da Compass com ênfase em AWS - Conceitos II
 
-###Tarefa 1: Exportação de dados
+### Tarefa 1: Exportação de dados
 
 Segue: [Querys dos arquivos csv](SQL%20-%20desafios/Biblioteca/Seçao%206%20-%20Linguagem%20SQL%20-%20Exercicios%20II/Tarefa%201%20-%20Exportação%20de%20dados)
 
