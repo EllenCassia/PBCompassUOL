@@ -17,6 +17,13 @@ Clique aqui : [Desafios dos finais de capítulos](SQLBasicoAoAvançado/Querys)
 
 <img src="https://udemy-certificate.s3.amazonaws.com/image/UC-bf292383-b95a-494b-96a2-322227f821bf.jpg" alt="DER - Loja" width="600" height="400">
 
+## Big Data Fundamentos 3.0
+
+Este curso traz os principais Fundamentos do Big Data, preparando o aluno para os treinamentos mais avançados
+
+#### Certificado do Curso
+
+<img src="https://github.com/EllenCassia/PBCompassUOL/assets/102759780/d57bf4df-36af-4225-a3a2-0f91c5edcd67" alt="certificado-bigData" width="600" height="400">
 
 ## **Sprint 2** do PB da Compass com ênfase em AWS - Conceitos I
 
