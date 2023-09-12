@@ -10,5 +10,6 @@ def div_list(lista):
     return parte1, parte2, parte3
 
 lista = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
-print(div_list(lista))
+parte1, parte2, parte3 = div_list(lista)
 
+print(parte1,parte2,parte3)

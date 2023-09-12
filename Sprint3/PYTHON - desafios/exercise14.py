@@ -1,18 +1,14 @@
-class Lampada:
+#Escreva uma função que recebe um número variável de parâmetros não nomeados e um número variado de parâmetros nomeados 
+#e imprime o valor de cada parâmetro recebido.
 
-    def __init__(self, ligada=False):
-        self.ligada = ligada
-   
-    def liga(self):
-        self.ligada = True
-    def desliga(self):
-        self.ligada = False
-    def esta_ligada(self):
-        return self.ligada
+#Teste sua função com os seguintes parâmetros:
+#(1, 3, 4, 'hello', parametro_nomeado='alguma coisa', x=20)
 
-lampada = Lampada() #Iniciamente desligada
-lampada.liga()
-print(f'A lâmpada está ligada? {lampada.esta_ligada()}')
-lampada.desliga()
-print(f'A lâmpada ainda está ligada? {lampada.esta_ligada()}')
+def imprimir_parametros(*args, **kwargs):
+    for arg in args:
+        print(arg)
 
+    for valor in kwargs.values():
+        print(valor)
+
+imprimir_parametros(1, 3, 4, 'hello', parametro_nomeado='alguma coisa', x=20)
