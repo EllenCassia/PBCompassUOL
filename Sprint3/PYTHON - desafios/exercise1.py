@@ -10,5 +10,4 @@ anoAtual = datetime.now().year
 
 idadeCem = 100 - idade
 anoCompletaCem = anoAtual + idadeCem
-print(anoCompletaCem)
-
+print(anoCompletaCem) 
