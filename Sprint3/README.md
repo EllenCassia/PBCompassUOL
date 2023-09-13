@@ -8,6 +8,8 @@ Objetivo: Aprenda do básico até o intermediário na Linguagem Python e compree
 ### Certificado 
 ![Alt text](image.png)
 
+![Alt text](certificado_python2.PNG)
+
 ### Data & Analytics - PB - AWS 3/10
 
 Link dos desafios do curso: [desafios/sprint3](PYTHON-desafios)
