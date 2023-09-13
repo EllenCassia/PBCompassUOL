@@ -2,4 +2,14 @@
 
 ## Python 3 - Curso Completo do Básico ao Avançado
 
-Nesta sprint foi focado em python 
+### Descrição
+Objetivo: Aprenda do básico até o intermediário na Linguagem Python e compreenda diversos conceitos utilizados na área de de Data & Analytics.
+
+### Certificado 
+![Alt text](image.png)
+
+### Data & Analytics - PB - AWS 3/10
+
+Link dos desafios do curso: [desafios/sprint3](PYTHON-desafios)
+
+Link dos desafios de ETL: [desafiosETL/sprint3](PYTHON-ETL%20desafios)
