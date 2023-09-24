@@ -1,0 +1,17 @@
+Primeiro é preciso fazer o build da image
+docker build -t <diretório que está localizada a image> <name a image>
+
+Depois é preciso criar um container a partir da image 
+docker run -it (terminal interativo) --name <name ao container> <image>
+
+[Pergunta 2]
+Sim, é possivel reutilizar um container parado atráves do comando start
+
+Primeiro é preciso listar os container parados para saber o ID
+docker ps -a
+
+Então, inicializar o container novamente 
+docker start <ID do container>
+
+Como é o projeto é um comando python pode ser adicionado a interatividade 
+docker start -i <ID do container>
