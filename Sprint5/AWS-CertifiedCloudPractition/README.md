@@ -4,7 +4,7 @@
 
 ## Aprendizados no Curso AWS Certified Cloud Practitioner
 
-Neste curso, adquiri conhecimentos essenciais sobre a Amazon Web Services (AWS) e sua computação em nuvem. Aprendi como a AWS oferece valor às empresas, permitindo que se concentrem em suas metas comerciais. Compreendi o modelo de responsabilidade compartilhada da AWS, que abrange a segurança na nuvem e as melhores práticas para garantir conformidade. Também explorei os principais serviços oferecidos pela AWS, como computação, redes, bancos de dados e armazenamento. 
+Este curso representou uma brevê preparação para o exame da aws, ao incorporar discussões e práticas atráves de questões centradas em conteúdos para a prova. Exploramos modelos de responsabilidade, abordando segurança na nuvem e as melhores práticas para assegurar conformidade. Além disso, revisamos de forma abrangente os serviços mais importantes e amplamente utilizados na AWS, proporcionando assim uma base sólida para o sucesso no exame.
 
 ## Conceitos Fundamentais da Nuvem: 
 - Me deu uma compreensão sólida dos conceitos de computação em nuvem. E entender os benefícios da escalabilidade e flexibilidade na nuvem realmente abriu meus olhos para o potencial da tecnologia.
