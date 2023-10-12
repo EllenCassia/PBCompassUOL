@@ -14,13 +14,13 @@ Aqui está uma visão geral dos cursos e conteúdos que explorei até agora:
 
 #### 🎉 Certificado 
 
-![Alt text](image.png)
+![Alt text](Certificados/image.png)
 
 ### ☁️ AWS Skill Builder - AWS Cloud Quest: Cloud Practitioner
 - [Link para a documentação](AWS-CloudPractitioner/README.md)
 - Adquiri conhecimentos fundamentais sobre a AWS e os princípios da Computação em Nuvem.
 
-![Alt text](image-1.png)
+![Alt text](Certificados/image-1.png)
 
 ### ☁️ AWS Skill Builder - AWS Partner: Aspectos econômicos da Cloud
 - [Link para a documentação](AWS-PatherAspectosEconomicosDaCloud/README.md)
@@ -28,7 +28,7 @@ Aqui está uma visão geral dos cursos e conteúdos que explorei até agora:
 
 #### 🎉 Certificado
 
-![Alt text](image-3.png)
+![Alt text](Certificados/image-3.png)
 
 ### ☁️ AWS Skill Builder - AWS Partner: Accreditation (Technical) (Portuguese)
 - [Link para a documentação]()
@@ -36,7 +36,7 @@ Aqui está uma visão geral dos cursos e conteúdos que explorei até agora:
 
 #### 🎉 Certificado 
 
-![Alt text](image-2.png)
+![Alt text](Certificados/image-2.png)
 
 
 ### ☁️ AWS Skill Builder - Exam Prep: AWS Certified Cloud Practitioner (Portuguese)
@@ -45,7 +45,7 @@ Aqui está uma visão geral dos cursos e conteúdos que explorei até agora:
 
 #### 🎉 Certificado
 
-![Alt text](image-4.png)
+![Alt text](Certificados/image-4.png)
 
 ## ✨ Conclusão
 Minha jornada de aprendizado em Computação em Nuvem com a AWS está em pleno andamento. Estou empolgado para aplicar esse conhecimento em projetos futuros e, eventualmente, obter a certificação AWS. 
