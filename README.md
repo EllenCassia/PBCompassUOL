@@ -19,7 +19,10 @@
   <li>✅ Sprint [Semana 1]: <a href="Sprint1/README.md">sprint/semana1</a></li>
   <li>✅ Sprint [Semana 2]: <a href="Sprint2/README.md">sprint/semana2</a></li>
   <li>✅ Sprint [Semana 3]: <a href="Sprint3/README.md">sprint/semana3</a></li>
-  <li>🕗 Sprint [Semana 4]: <a href="Sprint4/README.md">sprint/semana4</a></li>
+  <li>✅ Sprint [Semana 4]: <a href="Sprint4/README.md">sprint/semana4</a></li>
+  <li>✅ Sprint [Semana 5]: <a href="Sprint5/README.md">sprint/semana6</a></li>
+  <li>🕗 Sprint [Semana 6]: <a href="Sprint6/README.md">sprint/semana5</a></li>
+
 </ul>
 
 
