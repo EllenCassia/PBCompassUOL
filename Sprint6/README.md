@@ -47,5 +47,41 @@ Aqui está uma visão geral dos cursos e conteúdos que explorei até agora:
 
 ![Alt text](Certificados/image-4.png)
 
+# Data & Analytics - PB - AWS 6/10
+
+## Lab AWS Athena
+
+
+![Alt text](image.png)
+Criação do bucket S3
+
+![Alt text](image-1.png)
+Adição do csv e index.html dentro do bucket S3
+
+![Alt text](image-2.png)
+Bucket rodando na internet
+
+### Configuração do Athena para a consulta SQL
+
+![Alt text](image-3.png)
+Criação do bucket para armazenar os dados do arquivo csv
+
+![Alt text](image-4.png)
+Adição do nomes.csv e uma pasta de queries para armazenar as consultas efetuada no athena
+
+![Alt text](image-5.png)
+Criação do banco de dados no athena
+
+![Alt text](image-7.png)
+
+Consulta para lista os 3 nomes mais usados em cada década desde o 1950 até hoje
+
+![Alt text](image-6.png)
+Resultado na Consulta SQL
+
+## Lab AWS Lambda
+
+
+
 ## ✨ Conclusão
 Minha jornada de aprendizado em Computação em Nuvem com a AWS está em pleno andamento. Estou empolgado para aplicar esse conhecimento em projetos futuros e, eventualmente, obter a certificação AWS. 
