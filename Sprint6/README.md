@@ -8,16 +8,16 @@ Bem-vindo à minha trilha de formação em Computação em Nuvem com a Amazon We
 ## 📕 Cursos e Conteúdos
 Aqui está uma visão geral dos cursos e conteúdos que explorei até agora:
 
-### ☁️ AWS Skill Builder - AWS Partner: Sales Accreditation (Business) (Portuguese)
-- [Link para a documentação](AWS-PartherSalesAccreditation/README.md)
-- Aprendi sobre os aspectos de negócios da parceria com a AWS e como criar soluções de valor para clientes.
+### ☁️ AWS Skill Builder - Data Analytics Fundamentals (Portuguese)
+- [Link para a documentação](AWS-DataAnalyticsFundamentals/README.md)
+- Aprendi sobre os fundamentos da análise de dados, e como planejar as soluções de Data Analytics e como a AWS pode ajudar nesse processo.
 
 #### 🎉 Certificado 
 
-![Alt text](Certificados/image.png)
+![Alt text](Certificados/certificado_data_analytics_fundamentals.PNG)
 
-### ☁️ AWS Skill Builder - AWS Cloud Quest: Cloud Practitioner
-- [Link para a documentação](AWS-CloudPractitioner/README.md)
+### ☁️ AWS Partner: Data Analytics on AWS (Business) (Portuguese)
+- [Link para a documentação](AWS-DataAnalyticsOnAWS//README.md)
 - Adquiri conhecimentos fundamentais sobre a AWS e os princípios da Computação em Nuvem.
 
 ![Alt text](Certificados/image-1.png)
