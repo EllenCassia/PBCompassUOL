@@ -32,10 +32,37 @@ Aqui está uma visão geral dos cursos e conteúdos que explorei até agora:
 
 ## SEÇÃO 4: Laboratério AWS
 
+### Criando e executando um novo job no AWS Glue
+
+![Alt text](image-2.png)
+Criando um job
+
+![Alt text](image-3.png)
+Executando um job
+
 
 
 ## SEÇÃO 5: Desafio - Parte I
 
+[Tarefa 3: Desafio Parte 1 - ETL](secao5)
+
+![Alt text](image-8.png)
+Criando o bucket para armazenar os csv
+
+![![Alt text](image-12.png)](image-11.png)
+Criando um usuário IAM
+
+![![Alt text](image-14.png)](image-13.png)
+Criando um grupo de usuário 
+
+![Alt text](<Captura de tela 2023-11-10 132243.png>)
+build do dockerfile para executar o desafio.py
+
+![Alt text](image-9.png)
+Aqui a exportação dos dados no bucket
+
+![Alt text](image-10.png)
+Resultado após rodar o container com a imagem docker criada
 
 
 ## ✨ Conclusão
