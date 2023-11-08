@@ -9,7 +9,7 @@ Aqui está uma visão geral dos cursos e conteúdos que explorei até agora:
 
 #### 🎉 Certificado 
 
-!![Alt text](image.png)
+![Alt text](image.png)
 
 ### ☁️ Formação Spark com Pyspark : o Curso Completo
 
@@ -18,7 +18,7 @@ Aqui está uma visão geral dos cursos e conteúdos que explorei até agora:
 
 #### 🎉 Certificado
 
-![Alt text](Certificados/Introduction%20to%20Amazon%20Kinesis%20Streams.png)
+![Alt text](image-1.png)
 
 
 # Data & Analytics - PB - AWS 7/10
