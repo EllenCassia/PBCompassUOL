@@ -27,7 +27,7 @@ Aqui está uma visão geral dos cursos e conteúdos que explorei até agora:
 
 [Tarefa: Python com Pandas e Numpy](Tarefa1)
 
-[Tarefa: Apache Spark - Contador de Palavras](secao3/Tarefa2)
+[Tarefa: Apache Spark - Contador de Palavras](secao3)
 
 
 ## SEÇÃO 4: Laboratério AWS
