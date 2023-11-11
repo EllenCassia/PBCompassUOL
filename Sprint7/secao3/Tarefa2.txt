@@ -1,0 +1,11 @@
+# Carregar o conteúdo do arquivo README.md
+textRDD = sc.textFile("README.md")
+
+# Dividir as linhas em palavras e contar a ocorrência de cada palavra
+wordCountRDD = textRDD \
+    .flatMap(lambda line: line.split()) \
+    .map(lambda word: (word, 1)) \
+    .reduceByKey(lambda a, b: a + b)
+
+# Exibir o resultado
+wordCountRDD.collect()
