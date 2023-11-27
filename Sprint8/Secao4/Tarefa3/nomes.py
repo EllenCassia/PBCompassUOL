@@ -1,5 +1,6 @@
 import random
 import names
+import pandas as pd
 
 random.seed(40)
 
@@ -10,7 +11,7 @@ nomes_unicos = [names.get_full_name() for _ in range(qtd_nomes_unicos)]
 
 dados = [random.choice(nomes_unicos) for _ in range(qtd_nomes_aleatorios)]
 
-with open('nomes_aleatorios.txt', 'w') as arquivo:
-    for nome in dados:
-        arquivo.write(nome + '\n')
+df = pd.DataFrame(dados, columns=['nomes_aleatorios'])
+
+df.to_csv('nomes_aleatorios.txt', index=False)
 
