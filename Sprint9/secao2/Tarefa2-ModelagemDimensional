@@ -1,0 +1,71 @@
+
+--Apresenta um histórico detalhado de todas as locações
+
+CREATE VIEW FatoLocacao_Detalhes AS
+SELECT
+    L.id AS idLocacao,
+    L.dataLocacao,
+    L.horaLocacao,
+    L.dataEntrega,
+    L.horaEntrega,
+    C.nome AS Cliente,
+    V.nome AS Vendedor,
+    D.valor AS DiariaValor,
+    D.qtd AS DiariaQtd,
+    CA.km,
+    CA.classificacao,
+    CA.marca,
+    CA.modelo,
+    CA.ano,
+    CO.tipo AS CombustivelTipo
+FROM Locacao AS L
+JOIN Cliente AS C ON L.idCliente = C.id
+JOIN Vendedor AS V ON L.idVendedor = V.id
+JOIN Diaria AS D ON L.idDiaria = D.id
+JOIN Carro AS CA ON L.idCarro = CA.id
+LEFT JOIN Combustivel AS CO ON CA.idCombustivel = CO.id;
+
+-- Detalhadas sobre carros e seus combustíveis correspondentes
+
+CREATE VIEW DetalhesCombustiveis AS
+SELECT
+    CA.id AS CarroID,
+    CA.marca,
+    CA.modelo,
+    CO.tipo AS CombustivelTipo
+FROM Carro AS CA
+JOIN Combustivel AS CO ON CA.idCombustivel = CO.id
+GROUP BY CarroID, CombustivelTipo;
+
+-- Quantidade de vendas e total faturado 
+
+CREATE VIEW ResumoVendas AS
+SELECT
+    COUNT(D.qtd) AS QtdLocacoes,
+    SUM(D.valor) AS TotalFaturado
+FROM Diaria AS D;
+
+-- Quantas locação foi feit por um cliente e qual foi sua ultima locação
+
+CREATE VIEW VendasCliente AS
+SELECT
+    C.id AS idCliente,
+    C.nome AS Cliente,
+    COUNT(L.id) AS QuantidadeDiariasVendidas,
+    MAX(L.dataLocacao) AS UltimaDataLocacao
+FROM Cliente AS C
+LEFT JOIN Locacao AS L ON C.id = L.idCliente
+GROUP BY C.id, C.nome;
+
+-- Quantos cada vendedor vendeu e quando ele vendeu 
+
+CREATE VIEW VendasVendedor AS
+SELECT
+    V.id AS idVendedor,
+    V.nome AS Vendedor,
+    COUNT(L.id) AS QuantidadeDiariasVendidas,
+    SUM(D.valor) AS TotalVendido
+FROM Vendedor AS V
+LEFT JOIN Locacao AS L ON V.id = L.idVendedor
+LEFT JOIN Diaria AS D ON L.idDiaria = D.id
+GROUP BY V.id, V.nome;
