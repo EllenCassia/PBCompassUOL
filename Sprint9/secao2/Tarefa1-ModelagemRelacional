@@ -1,0 +1,93 @@
+CREATE TABLE Cliente (
+    id INT PRIMARY KEY,
+    nome VARCHAR(255),
+    cidade VARCHAR(255),
+    estado VARCHAR(255),
+    pais VARCHAR(50)
+);
+
+CREATE TABLE Vendedor (
+    id INT PRIMARY KEY,
+    nome VARCHAR(255),
+    estado VARCHAR(255),
+    sexo smallint
+);
+
+CREATE TABLE Combustivel (
+    id INT PRIMARY KEY,
+    tipo VARCHAR(255)
+);
+
+CREATE TABLE Carro (
+    id INT PRIMARY KEY,
+    km INT,
+    classificacao INT,
+    marca VARCHAR(100),
+    modelo VARCHAR(100),
+    ano INT,
+    idCombustivel INT,
+    FOREIGN KEY (idCombustivel) REFERENCES Combustivel(id)
+);
+
+CREATE TABLE Diaria (
+    id INT PRIMARY KEY,
+    valor FLOAT,
+    qtd INT
+);
+
+CREATE TABLE Locacao (
+    id INT PRIMARY KEY,
+    dataLocacao DATE,
+    horaLocacao TIME,
+    dataEntrega DATE,
+    horaEntrega TIME,
+    idDiaria INT,
+    idCliente INT,
+    idVendedor INT,
+    idCarro INT,
+    FOREIGN KEY (idDiaria) REFERENCES Diaria(id),
+    FOREIGN KEY (idCliente) REFERENCES Cliente(id),
+    FOREIGN KEY (idVendedor) REFERENCES Vendedor(id),
+    FOREIGN KEY (idCarro) REFERENCES Carro(id)
+);
+
+INSERT INTO Cliente (id, nome, cidade, estado, pais)
+SELECT DISTINCT idCliente, nomeCliente, cidadeCliente, estadoCliente, paisCliente
+FROM tb_locacao
+
+INSERT INTO Vendedor (id, nome,  estado, sexo)
+SELECT DISTINCT idVendedor, nomeVendedor, estadoVendedor, sexoVendedor
+FROM tb_locacao; 
+
+INSERT INTO Combustivel (id,tipo)
+SELECT DISTINCT idcombustivel, tipoCombustivel
+FROM tb_locacao
+
+INSERT OR IGNORE INTO Carro (id, km, classificacao, marca, modelo, ano, idCombustivel)
+SELECT DISTINCT
+    idCarro,
+    kmCarro,
+    classiCarro,
+    marcaCarro,
+    modeloCarro,
+    anoCarro,
+    idcombustivel
+FROM tb_locacao;
+
+INSERT INTO Diaria (id,valor,qtd)
+SELECT DISTINCT idLocacao, vlrDiaria, qtdDiaria
+FROM tb_locacao
+
+INSERT INTO Locacao (id, dataLocacao, horaLocacao, dataEntrega, horaEntrega, idDiaria, idCliente, idVendedor, idCarro)
+SELECT
+    idLocacao,
+    dataLocacao,
+    horaLocacao,
+    dataEntrega,
+    horaEntrega,
+    D.id,
+    idCliente,
+    idVendedor,
+    idCarro
+FROM tb_locacao AS L
+JOIN Diaria AS D ON L.idLocacao = D.id;
